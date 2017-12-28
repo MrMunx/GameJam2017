@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: f17cd1b14403ad34aa18c74e661a233b
-timeCreated: 1514421815
+guid: e1753de9a009c8348ab8c4f8d846debc
+timeCreated: 1514481344
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,20 +9,20 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Sphere
+    4300000: Cube
     7400000: Default Take
     9500000: //RootNode
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material_004
-    second: {fileID: 2100000, guid: c918d64f23d47114791d32c7ee9a5c8b, type: 2}
+      name: Material
+    second: {fileID: 2100000, guid: 74fa044870f069a4285dedc7adc5a9e8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
-    materialSearch: 0
-    materialLocation: 0
+    materialSearch: 1
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
