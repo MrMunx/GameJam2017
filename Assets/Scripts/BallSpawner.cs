@@ -27,7 +27,7 @@ public class BallSpawner : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        newPosition = trackedObj.transform.position.y + 2;
+        newPosition = trackedObj.transform.position.y + 1;
 
         if (Controller.GetHairTriggerDown())
         {
