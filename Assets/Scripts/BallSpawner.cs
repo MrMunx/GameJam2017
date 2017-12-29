@@ -9,7 +9,7 @@ public class BallSpawner : MonoBehaviour {
     private GameObject collidingObject;
     // 2
     private GameObject objectInHand;
-    private  GameObject ball;
+    private GameObject ball;
     private float newPosition;
 
     private SteamVR_Controller.Device Controller

@@ -68,8 +68,8 @@ public class ControllerGrabObject : MonoBehaviour {
     private FixedJoint AddFixedJoint()
     {
         FixedJoint fx = gameObject.AddComponent<FixedJoint>();
-        fx.breakForce = 20000;
-        fx.breakTorque = 20000;
+        fx.breakForce = 50000;
+        fx.breakTorque = 50000;
         return fx;
     }
 

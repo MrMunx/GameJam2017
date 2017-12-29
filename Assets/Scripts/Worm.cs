@@ -6,36 +6,16 @@ public class Worm : MonoBehaviour {
     //worm attributes
     //speed
     //health?
-    private GameObject worm;
-    public float speed;
-    public bool alive;
+    public GameObject thisworm;
+    private GameObject player;
+    private Transform goal;
 
 	// Use this for initialization
 	void Awake () {
-        alive = true;
-        worm = this.gameObject;
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		if(!alive)
-        {
-            Destroy(worm);
-        }
-	}
-
-    public void OnTriggerEnter(Collider other)
-    {
-        alive = false;
-    }
-
-    void Move()
-    {
-        //force based movement
-    }
-    
-    void PathFind()
-    {
-        //pathfind
+        thisworm = this.gameObject;
+        player = GameObject.Find("[CameraRig]");
+        goal = player.transform;
+        UnityEngine.AI.NavMeshAgent agent = GetComponent<UnityEngine.AI.NavMeshAgent>();
+        agent.destination = goal.position;
     }
 }
