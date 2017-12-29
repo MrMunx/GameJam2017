@@ -34,6 +34,7 @@ public class KillWorm : Worm
 
         if(dead)
         {
+            audio.Play();
             Destroy(thisworm);
         }
     }
@@ -50,6 +51,7 @@ public class KillWorm : Worm
 
         if (dead)
         {
+            audio.Play();
             Destroy(thisworm);
         }
     }
