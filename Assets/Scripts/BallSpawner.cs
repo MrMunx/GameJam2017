@@ -5,10 +5,8 @@ using UnityEngine;
 public class BallSpawner : MonoBehaviour {
 
     private SteamVR_TrackedObject trackedObj;
-    public Box box;
-    private GameObject collidingObject;
-    // 2
-    private GameObject objectInHand;
+    public Box box1;
+    public Box box2;
     private GameObject ball;
     private float newPosition;
 
@@ -21,7 +19,6 @@ public class BallSpawner : MonoBehaviour {
     {
         trackedObj = GetComponent<SteamVR_TrackedObject>();
         ball = GameObject.Find("itchbal");
-        collidingObject = GameObject.Find("box1");
     }
 
     // Update is called once per frame
@@ -31,7 +28,7 @@ public class BallSpawner : MonoBehaviour {
 
         if (Controller.GetHairTriggerDown())
         {
-            if (box.boxPrepareSpawn)
+            if (box1.boxPrepareSpawn || box2.boxPrepareSpawn)
             {
                 Instantiate(ball, new Vector3(trackedObj.transform.position.x, newPosition, trackedObj.transform.position.z), ball.transform.rotation);
             }

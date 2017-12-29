@@ -6,6 +6,11 @@ public class Box : MonoBehaviour {
 
     public bool boxPrepareSpawn;
 
+    void Awake ()
+    {
+        boxPrepareSpawn = false;
+    }
+
     public void OnTriggerEnter(Collider other)
     {
         boxPrepareSpawn = true;

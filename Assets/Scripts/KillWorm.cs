@@ -39,21 +39,5 @@ public class KillWorm : Worm
         }
     }
 
-    public void OnTriggerStay(Collider other)
-    {
-        foreach (GameObject ball in balls)
-        {
-            if (other == ball.GetComponent<SphereCollider>())
-            {
-                dead = true;
-            }
-        }
-
-        if (dead)
-        {
-            audio.Play();
-            Destroy(thisworm);
-        }
-    }
 
 }

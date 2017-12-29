@@ -84,6 +84,8 @@ public class ControllerGrabObject : MonoBehaviour {
             // 3
             objectInHand.GetComponent<Rigidbody>().velocity = Controller.velocity;
             objectInHand.GetComponent<Rigidbody>().angularVelocity = Controller.angularVelocity;
+            objectInHand.GetComponent<Rigidbody>().velocity.Scale(new Vector3(4,4,4));
+            objectInHand.GetComponent<Rigidbody>().angularVelocity.Scale(new Vector3(3, 3, 3));
         }
         // 4
         objectInHand = null;
